@@ -1,4 +1,4 @@
-# Mark-14- NeogCamp- Stock profit loss
+# Profit or loss on your stock?
 ## About: 
 - The app Takes input stock price for one stock as input from user.
 - App takes current stock price for one stock as input from user.

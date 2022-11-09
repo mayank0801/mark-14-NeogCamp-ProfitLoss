@@ -5,16 +5,16 @@ var btnCheck=document.querySelector("#btn-Check");
 var output=document.querySelector("#output-Msg");
 
 
-btnCheck.addEventListener("click",checkStock);
 
 function checkStock(){
-    // console.log("clicked");
+    console.log("clicked");
     var initialPrc=IntailPrice.value;
     var Qnt=Qnty.value;
     var currentPrc=currentPrice.value;
     if(initialPrc===""||Qnt===""||currentPrc===""){
         // alert("Please Enter all required Field");
-        output.innertext="Please Enter all required Field";
+        console.log("edge case");
+        output.innerText="Please Enter all required Field";
         return;
     }
     else if(initialPrc<0||Qnt<0||currentPrc<0){
@@ -48,6 +48,8 @@ function calculateProfitAndLoss(intial,quantity,current){
 function errorMessage(message,profit){
     output.innerHTML=message;
 }
+btnCheck.addEventListener("click",checkStock);
+
 
 
 
